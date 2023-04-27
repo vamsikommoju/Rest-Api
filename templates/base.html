@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RESTfulAPI</title>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/jquery.js' %}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="text-center">
+                <h1 class="text-center alert alert-info">Dajngo REST Framework</h1>
+                <a href="{% url 'restapi:courseapi'  %}">COURSE DATA</a>
+            </div>
+            <div class="">
+                {% block b1 %}
+                {% endblock b1 %}
+            </div>
+        </div>
+    </body>
+</html>
